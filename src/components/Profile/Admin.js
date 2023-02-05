@@ -41,7 +41,7 @@ const Admin = () => {
 
       <TouchableOpacity
         onPress={() => {
-          navigation.navigate("bookadd");
+          navigation.navigate("adminbook");
         }}
       >
         <View
