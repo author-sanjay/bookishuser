@@ -1,12 +1,11 @@
 import { View, Text } from "react-native";
-import React from "react";
+import React, { useState } from "react";
+import UserList from "./UserList";
+import Admin from "./Admin";
 
 const ProfileList = () => {
-  return (
-    <View>
-      <Text>ProfileList</Text>
-    </View>
-  );
+  const [user, setUser] = useState(false);
+  return <View>{user ? <UserList /> : <Admin />}</View>;
 };
 
 export default ProfileList;
